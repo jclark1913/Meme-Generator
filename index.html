@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator - Under Construction</title>
+</head>
+
+<body>
+  <div class="site-container">
+    <header class="header">
+      <p class="header-title">MEME GENERATOR</h3>
+    </header>
+    <div class="main">
+      <div class="main-palette">
+        <div class="editor-sidebar">
+          <p class="editor-title">EDITOR TITLE</p>
+          <div class="sidebar-image-selection">
+            <p>Image Selection</p>
+            <div class="sidebar-image-selection-button">
+              <p>Upload an image: </p>
+              <input type="file" class="input-buttons" id="file-input" accept="image/*">
+            </div>
+            <div class="sidebar-image-selection-button">
+              <p>Add img URL</p>
+              <input type="url" id="url-input" placeholder="Paste URL">
+            </div>
+          </div>
+          <div class="sidebar-text-editing">
+            <p>Top Text</p>
+            <div class="sidebar-editor-button">
+              <p>Text Size</p>
+              <div class="input-slider-container">
+                <input type="text" class="text-input" id="font-size-top">
+                <input type="range" min="1" max="100" value="50" class="editor-slider" id="top-text-size">
+              </div>
+            </div>
+            <div class="sidebar-editor-button">
+              <p>Offset from top</p>
+              <div class="input-slider-container">
+                <input type="text" class="text-input" id="offset-top">
+                <input type="range" min="1" max="100" value="50" class="editor-slider" id="top-text-offset">
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-text-editing">
+            <p>Bottom Text</p>
+            <div class="sidebar-editor-button">
+              <p>Text Size</p>
+              <div class="input-slider-container">
+                <input type="text" class="text-input" id="font-size-bottom">
+                <input type="range" min="1" max="100" value="50" class="editor-slider" id="bottom-text-size">
+              </div>
+            </div>
+            <div class="sidebar-editor-button">
+              <p>Text Size</p>
+              <div class="input-slider-container">
+                <input type="text" class="text-input" id="offset-bottom">
+                <input type="range" min="1" max="100" value="50" class="editor-slider" id="bottom-text-size">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="canvas-area">TEXT</div>
+      </div>
+      <div class="meme-bar">TEXT</div>
+    </div>
+    <footer class="footer">
+      <p class="footer-text">Created by Justin Clark</p><a href="https://www.github.com/jclark1913"><img
+          src="./images/github-mark-white.svg" class="github-link"></a></p>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

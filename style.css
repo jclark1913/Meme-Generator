@@ -1,0 +1,155 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.site-container {
+    background-color: #161b22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header {
+    background-color: #30363d;
+    flex-shrink: 0;
+    width: 100%;
+    color: aliceblue;
+    margin: 0px 16px;
+    min-height: 70px;
+}
+
+.header-title {
+    font-size: 22px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #30363d;
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.github-link{
+    max-height: 22px;
+}
+
+.footer-text{
+
+}
+
+.main {
+    flex-grow: 1;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 2200px;
+    margin: 0px;
+    gap: 30px;
+}
+
+.main-palette {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+    max-height: 800px;
+    gap: 100px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    width: 75%;
+}
+
+.editor-sidebar {
+    background-color: #30363d;
+    flex-shrink: 0;
+    flex-grow: 1;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.canvas-area {
+    flex-shrink: 0;
+    background-color:#30363d;
+    height: 700px;
+    min-width: 800px;
+    flex-grow: 1;
+}
+
+.meme-bar {
+    background-color:#30363d;
+    width: 75%;
+    max-height: 300px;
+    min-height: 150px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin-bottom: 40px;
+}
+
+.sidebar-image-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+
+}
+
+.sidebar-image-selection-button {
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.input-buttons {
+    margin: 16px 0px;
+    text-align: center;
+}
+
+.sidebar-editor-button {
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.text-input {
+    width: 20px;
+}
+
+.input-slider-container {
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar-text-editing {
+
+}
