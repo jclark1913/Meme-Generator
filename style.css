@@ -86,7 +86,6 @@ body {
     height: 700px;
     display: flex;
     flex-direction: column;
-
 }
 
 .canvas-area {
@@ -95,6 +94,24 @@ body {
     height: 700px;
     min-width: 800px;
     flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    height: 650px;
+    width: 750px;
+    background-color: #161b22;
+    overflow: hidden;
+    position: relative;
+}
+
+#current-image {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+
 }
 
 .meme-bar {
@@ -125,6 +142,7 @@ body {
     justify-content: space-between;
     padding: 0px 30px;
     text-align: center;
+    align-items: center;
 }
 
 .input-buttons {
@@ -141,15 +159,53 @@ body {
     padding: 0px 50px;
 }
 
-.text-input {
-    width: 20px;
+.sidebar-text-input {
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
 }
+
+.value-display {
+    width: 16px;
+    margin: 0px 16px;
+    text-align: center;
+}
+
 
 .input-slider-container {
     display: flex;
     gap: 10px;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.sidebar-text-editing {
 
+.text-content {
+    width: 300px;
+    height: 25px;
+}
+
+#url-input {
+    width: 250px;
+    height: 25px;
+}
+
+.top-text-box,
+.bottom-text-box {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+.top-text-box {
+    top: 0px;
+}
+
+.bottom-text-box {
+    bottom: 0px;
 }

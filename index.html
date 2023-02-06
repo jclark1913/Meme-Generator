@@ -13,6 +13,8 @@
     <header class="header">
       <p class="header-title">MEME GENERATOR</h3>
     </header>
+
+
     <div class="main">
       <div class="main-palette">
         <div class="editor-sidebar">
@@ -27,46 +29,78 @@
               <p>Add img URL</p>
               <input type="url" id="url-input" placeholder="Paste URL">
             </div>
+            <div class="image-buttons-container">
+            <button type="submit" id="add-image-url-button">Add image from URL</button>
+            <button type="submit" id="add-image-file-button">Add uploaded image</button>
+            </div>
           </div>
           <div class="sidebar-text-editing">
             <p>Top Text</p>
+            <div class="sidebar-text-input">
+              <p class="content-input">Text content</p>
+              <input type="text" class="text-content" id="text-input-top">
+            </div>
             <div class="sidebar-editor-button">
               <p>Text Size</p>
               <div class="input-slider-container">
-                <input type="text" class="text-input" id="font-size-top">
-                <input type="range" min="1" max="100" value="50" class="editor-slider" id="top-text-size">
+                <div class="value-display" id="top-font-size-value">36px</div>
+                <input type="range" min="18" max="72" value="36" class="editor-slider" id="top-text-size">
               </div>
             </div>
             <div class="sidebar-editor-button">
               <p>Offset from top</p>
               <div class="input-slider-container">
-                <input type="text" class="text-input" id="offset-top">
-                <input type="range" min="1" max="100" value="50" class="editor-slider" id="top-text-offset">
+                <div class="value-display" id="top-offset-value">0px</div>
+                <input type="range" min="0" max="100" value="0" class="editor-slider" id="top-text-offset">
               </div>
             </div>
           </div>
           <div class="sidebar-text-editing">
             <p>Bottom Text</p>
-            <div class="sidebar-editor-button">
-              <p>Text Size</p>
-              <div class="input-slider-container">
-                <input type="text" class="text-input" id="font-size-bottom">
-                <input type="range" min="1" max="100" value="50" class="editor-slider" id="bottom-text-size">
-              </div>
+            <div class="sidebar-text-input">
+              <p class="content-input">Text content</p>
+              <input type="text" class="text-content" id="text-input-bottom">
             </div>
             <div class="sidebar-editor-button">
               <p>Text Size</p>
               <div class="input-slider-container">
-                <input type="text" class="text-input" id="offset-bottom">
-                <input type="range" min="1" max="100" value="50" class="editor-slider" id="bottom-text-size">
+                <div class="value-display" id="bottom-font-size-value">36px</div>
+                <input type="range" min="18" max="72" value="36" class="editor-slider" id="bottom-text-size">
+              </div>
+            </div>
+            <div class="sidebar-editor-button">
+              <p>Offset from bottom</p>
+              <div class="input-slider-container">
+                <div class="value-display" id="bottom-offset-value">0px</div>
+                <input type="range" min="0" max="100" value="0" class="editor-slider" id="bottom-text-offset">
               </div>
             </div>
           </div>
         </div>
-        <div class="canvas-area">TEXT</div>
+
+
+
+        <div class="canvas-area">
+          <div class="image-container">
+            <div class="top-text-box">TOP TEXT</div>
+            <img id="current-image">
+            <div class="bottom-text-box">BOTTOM TEXT</div>
+          </div>
+        </div>
+
       </div>
+
+
+
+
+
+
       <div class="meme-bar">TEXT</div>
+
     </div>
+
+
+
     <footer class="footer">
       <p class="footer-text">Created by Justin Clark</p><a href="https://www.github.com/jclark1913"><img
           src="./images/github-mark-white.svg" class="github-link"></a></p>
