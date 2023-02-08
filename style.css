@@ -7,6 +7,19 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
+.edit-button {
+    background-color:#30363d;
+    color: aliceblue;
+    border: 2px solid #008CBA;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.edit-button:hover{
+    background-color: #008CBA
+}
+
 .site-container {
     background-color: #161b22;
     display: flex;
@@ -100,28 +113,40 @@ body {
 }
 
 .image-container {
-    height: 650px;
-    width: 750px;
-    background-color: #161b22;
+    margin: 25px;
+    background-color:
     overflow: hidden;
     position: relative;
+    max-width: 700px;
+    max-height: 700px;
 }
 
 #current-image {
     object-fit: contain;
     height: 100%;
     width: 100%;
-
 }
 
 .meme-bar {
     background-color:#30363d;
-    width: 75%;
-    max-height: 300px;
+    max-width: 75%;
     min-height: 150px;
+    min-width: 75%;
     flex-shrink: 1;
     flex-grow: 1;
     margin-bottom: 40px;
+}
+
+.memes-container {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#meme-text-placeholder {
+    font-size: 32px;
 }
 
 .sidebar-image-selection {
@@ -208,4 +233,31 @@ body {
 
 .bottom-text-box {
     bottom: 0px;
+}
+
+.saved-meme:hover * {
+
+}
+
+.saved-meme:hover .deleteButton {
+    display: block;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color:white;
+    color: black;
+    border: 2px solid #161b22;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.deleteButton:hover {
+    background-color: red;
+    color: white;
 }
