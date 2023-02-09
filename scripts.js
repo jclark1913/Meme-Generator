@@ -145,6 +145,7 @@ deleteButton.textContent = "DELETE MEME";
 deleteButton.classList.add("deleteButton");
 
 // Add delete button + functionality to all clones
+
 function addDeleteButton(element) {
   const copiedDeleteButton = deleteButton.cloneNode(true);
   element.appendChild(copiedDeleteButton);

@@ -95,10 +95,11 @@ body {
 .editor-sidebar {
     background-color: #30363d;
     flex-shrink: 0;
-    flex-grow: 1;
+    flex-grow: 0;
     height: 700px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .canvas-area {
@@ -106,7 +107,7 @@ body {
     background-color:#30363d;
     height: 700px;
     min-width: 800px;
-    flex-grow: 1;
+    flex-grow: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,6 +226,7 @@ body {
     text-align: center;
     color: white;
     font-size: 36px;
+    text-shadow:1px 0 0 black,0 1px 0 black,-1px 0 0 black,0 -1px 0 black;
 }
 
 .top-text-box {
